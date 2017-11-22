@@ -12,6 +12,8 @@ NNCG training is done using an analysis-by-synthesis loop that distributes the e
 Four syllable position ramps are used by the NNCGs to generate pitch and duration coefficients for each syllable.
 
 
+[1] Bailly, Gérard, and Bleicke Holm. "SFC: a trainable prosodic model." Speech communication 46, no. 3 (2005): 348-364.
+
 ## PySFC
 
 PySFC is a Python implementation of the SFC model that was created with two goals: *i*) to make the SFC more accessible to the scientific community, and *ii*) to serve as a foundation for future improvements of the prosody model. 
