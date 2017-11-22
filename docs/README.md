@@ -52,6 +52,7 @@ céng ná zhē shuí guǒ nái fěn qù tàn wàng yóu tā men zhuǎn sòng qù
 **Figure 3.** Example PySFC expansion in left and right context for the dependency to the right (DD) functional contour, numbers next to the plots show the number of occurences of that scope in the data.
 
 ![alt text](r1_losses_DC.png)
+
 **Figure 4.** Example PySFC plots of `f_0` reconstruction losses for all NNCGs for attitude DC per iteration for French.
 
 
