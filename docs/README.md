@@ -41,4 +41,8 @@ PySFC also brings added value, by adding the possibility to adjust the number of
 
 Here are a few example plots with PySFC just to show case what it can do.
 
-![Example PySFC intonation decomposition for the French utterance: *Son bagou pourrait faciliter la communaut́e.* into constituent functional contours: declaration (DC), dependency to the left/right (DG/DD), and cliticisation (XX, DV).](r1_DC_393.png)
+![alt text](r1_DC_393.png)
+**Figure 1.** Example PySFC intonation decomposition for the French utterance: *Son bagou pourrait faciliter la communaut́e.* into constituent functional contours: declaration (DC), dependency to the left/right (DG/DD), and cliticisation (XX, DV).
+
+![alt text](r1_chinese_003.png)
+**Figure 2.** Example PySFC intonation decomposition for the Chinese utterance: *Ta1 men ceng2 zai4 ji1 cang1 nei4 gei2 lv3 ke4 dian3 ge1 he4 sheng1 ri4, ceng2 na2 zhe1 shui2 guo3 nai2 fen3 qu4 tan4 wang4 you2 ta1 men zhuan3 song4 qu4 yi1 yuan4 de lv3 ke4 chan3 fu4.* into constituent functional contours: declaration (DC), tones (C0-4), word boundaries (WB), and independence (ID).
