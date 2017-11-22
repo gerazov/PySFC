@@ -37,3 +37,8 @@ PySFC comprises the following modules:
 Currently, PySFC supports the proprietary SFC `fpro` file format as well as standard Praat `TextGrid` annotations. Pitch is calculated based on Praat `PointProcess` pitch mark files, but integration of state-of-the-art pitch extractors is planned for the future. 
 PySFC also brings added value, by adding the possibility to adjust the number of samples to be taken from the pitch contour at each rhythmical unit vowel nucleus, and with its extended plotting capabilities for data and performance analysis.
 
+### PySFC Example Plots
+
+Here are a few example plots with PySFC just to show case what it can do.
+
+![Example PySFC intonation decomposition for the French utterance: *Son bagou pourrait faciliter la communaut́e.* into constituent functional contours: declaration (DC), dependency to the left/right (DG/DD), and cliticisation (XX, DV).](docs/r1_DC_393.png)
