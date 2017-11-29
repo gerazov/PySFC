@@ -21,8 +21,7 @@ import logging
 import sys
 import seaborn as sns
 import pickle
-import sfc_dsp
-import sfc_plot
+from sfc import sfc_dsp, sfc_plot
 
 #%%
 
@@ -226,7 +225,7 @@ def read_fpro(filename, re_fpro, database='french'):
         return(fpro_stats, f0s, enrs, units, durunits, durcoeffs, tpss, dursegs, phones,
                sylls, poss, orthographs, phrase, levels)
 
-def read_textgrid(filename, params, phone_duration_means=None):
+def read_textgrid(filename, params, phone_duration_means=None, f0_ref=None, isochrony_clock=None):
     '''
     Read textgrid and generate fpro data.
 
@@ -308,8 +307,6 @@ def read_textgrid(filename, params, phone_duration_means=None):
     database = params.database
     f0_method = params.f0_method
     vowel_marks = params.vowel_marks
-    f0_ref = params.f0_ref
-    isochrony_clock = params.isochrony_clock
     show_plot = params.show_plot
     save_path = params.save_path
 
@@ -665,7 +662,7 @@ def read_textgrid(filename, params, phone_duration_means=None):
     fpro_lists = fpro_stats, f0_array, units, durunits, durcoeffs, dursegs, \
                     phones, orthographs, phrase, levels
 #%%
-    return fpro_lists, phone_duration_means
+    return fpro_lists, phone_duration_means, f0_ref, isochrony_clock
 #%%
 def extract_f0_stats(files_grid, files_f0, params):
     '''

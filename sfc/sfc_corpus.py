@@ -16,7 +16,7 @@ from natsort import natsorted
 import os
 import re
 import sys
-import sfc_data
+from sfc import sfc_data
 
 #%%
 def build_corpus(params):
@@ -107,8 +107,10 @@ def build_corpus(params):
 
         elif file_type == 'TextGrid':  # do it from a TextGrid
             try:
-                fpro_lists, phone_duration_means = sfc_data.read_textgrid(barename, params,
-                                                phone_duration_means=phone_duration_means)
+                fpro_lists, phone_duration_means, f0_ref, isochrony_clock = sfc_data.read_textgrid(barename, params,
+                                                phone_duration_means=phone_duration_means, 
+                                                f0_ref=f0_ref, 
+                                                isochrony_clock=isochrony_clock)
             except:
                 log.error(sys.exc_info()[0])
                 log.error('{} read error!'.format(barename))
